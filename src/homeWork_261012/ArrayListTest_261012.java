@@ -27,13 +27,13 @@ public class ArrayListTest_261012 {
 		   studentName.add("김유신");
 		   studentName.add("강감찬");
 		  		   
-		    for(String string1 : studentName) {
-		   if (string1.contains("이순신")) {
+		   // for(String string1 : studentName) {
+		   if (studentName.contains("이순신")) {
 			   System.out.println("존재합니다.");
 		   }else{
 			   System.out.println("존재하지 않습니다.");
 		   }
-		   }
+		  // }
 		   System.out.println("===================================="); 
 		   
 		   HashSet<String> stringSet = new HashSet<String>();
@@ -43,7 +43,9 @@ public class ArrayListTest_261012 {
 		   stringSet.add("React");
 		   stringSet.add("Spring");
 		   System.out.println(stringSet.size());
+		  
 		   //hashSet 값이 중복되지않음
+		   System.out.println("===================================="); 
 		   
 		   HashMap<String, Integer> studentScore = new HashMap<String,Integer>(); 
 		   studentScore.put("홍길동", 90);
